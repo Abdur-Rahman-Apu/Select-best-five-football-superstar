@@ -1,0 +1,46 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
+
+/* css variable declared  */
+
+:root {
+    --font1: 'Berkshire Swash', cursive;
+    --font2: 'Manrope', sans-serif;
+    --heading-text-color: #FF5E19;
+    --btn-color: #015196;
+    --card-text-color: #B3B3B3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    min-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+header .left-side {
+    background: url("./images/path56.png");
+}
+
+.heading-text {
+    font-family: var(--font1);
+    font-weight: 400;
+    color: var(--heading-text-color);
+    font-size: 4em;
+}
+
+.right-bottom {
+    background: url("./images/rectangle.png");
+}
