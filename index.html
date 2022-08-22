@@ -47,8 +47,8 @@
     <main class="mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-9">
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-12 col-lg-9">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         <div class="col">
                             <div class="card h-100">
                                 <img src="./images/messi22.jpg" class="card-img-top" alt="...">
@@ -154,7 +154,7 @@
 
                     </div>
                 </div>
-                <div class="col-3 dom-part">
+                <div class="col-12 col-lg-3 dom-part">
                     <div class="top">
                         <h4 class="text-center text-white mt-4">Selected-V</h4>
                         <ol>
@@ -163,18 +163,30 @@
                     </div>
                     <div class="bottom">
                         <h4 class="text-center text-white mb-4">Budget</h4>
-                        <p>Per player <input class="w-50" type="text" name="" id="player-field"></p>
-                        <button class="button text-white">Calculate</button>
+                        <div class="d-flex justify-content-around align-items-center mb-4">
+                            <p class="m-0">Per Player</p>
+                            <input class="w-50" type="text" name="" id="player-field">
+                        </div>
+                        <button class="button  text-white mb-4">Calculate</button>
 
-                        <p>Player Expenses <span class="text-white">$0</span></p>
+                        <div class="d-flex gap-3">
+                            <p>Player Expenses</p>
+                            <p>$<span class="text-white">0</span></p>
+                        </div>
 
-                        <p>Manager <input class="w-50" type="text" name="" id="manager-pay-field"></p>
-                        <p>Coach <input class="w-50" type="text" name="" id="coach-pay-field"></p>
+                        <div class="d-flex align-items-center  gap-5 mb-3">
+                            <p class="m-0">Manager</p>
+                            <input class="w-50" type="text" name="" id="manager-pay-field">
+                        </div>
+                        <div class="d-flex  align-items-center coach mb-3">
+                            <p class="m-0">Coach</p>
+                            <input class="coach-field w-50" type="text" name="" id="coach-pay-field">
+                        </div>
 
-                        <button class="calculate-total-btn text-white">Calculate Total</button>
-                        <div class="d-flex justify-content-between">
+                        <button class="button text-white mb-3">Calculate Total</button>
+                        <div class="d-flex justify-content-between total-part">
                             <p>Total</p>
-                            <p>$ <span class="text-white">0</span> </p>
+                            <p class="total-amount">$ <span class="total-calculate">0</span> </p>
                         </div>
                     </div>
                 </div>

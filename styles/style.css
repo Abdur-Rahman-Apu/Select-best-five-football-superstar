@@ -80,6 +80,10 @@ header .left-side {
 }
 
 /* dom part  */
+.bottom {
+    padding: 10px;
+}
+
 
 .dom-part .top,
 .dom-part .bottom {
@@ -88,4 +92,43 @@ header .left-side {
 
 .dom-part .top {
     height: 300px;
+}
+
+.dom-part .bottom p {
+    color: #AFAFAF;
+    font-family: var(--font2);
+    font-weight: 400;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--btn-color);
+    font-family: var(--font2);
+    font-weight: 700;
+}
+
+.coach-field {
+    /* width: 118px; */
+}
+
+.coach {
+    gap: 64px;
+}
+
+button {
+    font-family: var(--font2);
+    font-weight: 700;
+}
+
+input {
+    padding: 5px;
+    background-color: #0D0D0D;
+    color: white;
+    border: 1px solid white;
+}
+
+.dom-part .bottom .total-part .total-amount,
+.dom-part .bottom .total-part .total-amount>span {
+    color: #FF5E19;
 }
