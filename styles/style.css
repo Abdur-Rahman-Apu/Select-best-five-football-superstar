@@ -31,7 +31,7 @@ header {
 }
 
 header .left-side {
-    background: url("./images/path56.png");
+    background-image: url("../images/path56.png");
 }
 
 .heading-text {
@@ -42,7 +42,9 @@ header .left-side {
 }
 
 .right-bottom {
-    background: url("./images/rectangle.png");
+    background-image: url("../images/rectangle.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 /* main part card  */
@@ -127,6 +129,11 @@ input {
 .dom-part .bottom .total-part .total-amount,
 .dom-part .bottom .total-part .total-amount>span {
     color: #FF5E19;
+}
+
+#order-list {
+    font-family: var(--font2);
+    font-weight: 400;
 }
 
 /* footer part  */
