@@ -167,11 +167,11 @@
                             <p class="m-0">Per Player</p>
                             <input class="w-50" type="text" name="" id="player-field">
                         </div>
-                        <button class="button  text-white mb-4">Calculate</button>
+                        <button id="calculate" class="button text-white mb-4">Calculate</button>
 
                         <div class="d-flex gap-3">
                             <p>Player Expenses</p>
-                            <p>$<span class="text-white">0</span></p>
+                            <p>$<span id="player-expense" class="text-white">0</span></p>
                         </div>
 
                         <div class="d-flex align-items-center  gap-5 mb-3">
@@ -183,10 +183,11 @@
                             <input class="coach-field w-50" type="text" name="" id="coach-pay-field">
                         </div>
 
-                        <button class="button text-white mb-3">Calculate Total</button>
+                        <button id="calculate-total-cost" class="button text-white mb-3">Calculate Total</button>
                         <div class="d-flex justify-content-between total-part">
                             <p>Total</p>
-                            <p class="total-amount">$ <span class="total-calculate">0</span> </p>
+                            <p class="total-amount">$ <span id="total-cost-calculation" class="total-calculate">0</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -209,6 +210,7 @@
     <!-- custom js link  -->
     <script src="./js/common.js"></script>
     <script src="./js/selectBestFive.js"></script>
+    <script src="./js/calculateBudget.js"></script>
 </body>
 
 </html>
