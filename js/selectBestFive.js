@@ -3,9 +3,8 @@ const allButtons = document.getElementById('card-section').querySelectorAll('.ca
 for (const button of allButtons) {
     button.addEventListener('click', function (event) {
 
-        const orderedList = document.querySelectorAll('.dom-part .top ol li');
-        const listLength = Object.keys(orderedList).length;
-
+        // get how many players are selected
+        const listLength = getOrderListLength('.dom-part .top ol li');
 
         if (listLength < 5) {
             event.target.disabled = true;

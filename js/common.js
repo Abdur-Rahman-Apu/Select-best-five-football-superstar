@@ -9,3 +9,9 @@ function setTextById(inputId, value) {
     const textField = document.getElementById(inputId);
     textField.innerText = value;
 }
+
+function getOrderListLength(queries) {
+    const orderedList = document.querySelectorAll(queries);
+    const orderedListLength = Object.keys(orderedList).length;
+    return orderedListLength;
+}

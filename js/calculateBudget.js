@@ -1,8 +1,8 @@
 
 document.getElementById('calculate').addEventListener('click', function () {
 
-    const orderedList = document.querySelectorAll('.dom-part .top ol li');
-    const numberOfPlayers = Object.keys(orderedList).length;
+    // get how many players are selected
+    const numberOfPlayers = getOrderListLength('.dom-part .top ol li');
 
     const playerCost = getValueById('player-field');
 
