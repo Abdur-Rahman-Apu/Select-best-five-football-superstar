@@ -110,9 +110,10 @@ header .left-side {
  dom part 
  ******* */
 
-#order-list {
+#order-list li {
     font-family: var(--font2);
     font-weight: 400;
+    padding-left: 10px;
 }
 
 .dom-part .top,
