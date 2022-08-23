@@ -1,9 +1,13 @@
-/* google fonts  */
+/*************
+ google fonts
+ *************  */
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 
 
-/* css variable declared  */
+/**********************
+ css variable declared 
+ ********************** */
 
 :root {
     --font1: 'Berkshire Swash', cursive;
@@ -13,6 +17,9 @@
     --card-text-color: #B3B3B3;
 }
 
+/**************
+ common design
+ ************* */
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +30,22 @@ body {
     background-color: #000000;
 }
 
+button {
+    font-family: var(--font2);
+    font-weight: 700;
+}
+
+input {
+    padding: 5px;
+    background-color: #0D0D0D;
+    color: white;
+    border: 1px solid white;
+}
+
+
+/****************
+header part start
+*****************  */
 header {
     min-height: 50vh;
     width: 100%;
@@ -47,7 +70,9 @@ header .left-side {
     background-position: right;
 }
 
-/* main part card  */
+/*********
+ main part
+ ********* */
 
 .card {
     font-family: var(--font2);
@@ -81,11 +106,14 @@ header .left-side {
     background-color: var(--btn-color);
 }
 
-/* dom part  */
-.bottom {
-    padding: 10px;
-}
+/*********
+ dom part 
+ ******* */
 
+#order-list {
+    font-family: var(--font2);
+    font-weight: 400;
+}
 
 .dom-part .top,
 .dom-part .bottom {
@@ -94,6 +122,10 @@ header .left-side {
 
 .dom-part .top {
     height: 300px;
+}
+
+.bottom {
+    padding: 10px;
 }
 
 .dom-part .bottom p {
@@ -114,29 +146,16 @@ header .left-side {
     gap: 64px;
 }
 
-button {
-    font-family: var(--font2);
-    font-weight: 700;
-}
-
-input {
-    padding: 5px;
-    background-color: #0D0D0D;
-    color: white;
-    border: 1px solid white;
-}
-
 .dom-part .bottom .total-part .total-amount,
 .dom-part .bottom .total-part .total-amount>span {
     color: #FF5E19;
 }
 
-#order-list {
-    font-family: var(--font2);
-    font-weight: 400;
-}
 
-/* footer part  */
+
+/************
+ footer part
+ ************  */
 footer {
     margin-top: 120px;
     min-height: 100px;
