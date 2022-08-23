@@ -4,11 +4,10 @@ document.getElementById('calculate').addEventListener('click', function () {
     // get how many players are selected
     const numberOfPlayers = getOrderListLength('.dom-part .top ol li');
 
+    // get player expense 
     const playerCost = getValueById('player-field');
 
-
-
-    if (isNaN(playerCost)) {
+    if (isNaN(playerCost) || playerCost < 0) {
         alert("Enter player expense cost correctly");
     } else {
 
@@ -34,9 +33,11 @@ document.getElementById('calculate-total-cost').addEventListener('click', functi
     // coach cost 
     const coachCost = getValueById('coach-pay-field');
 
-    if (isNaN(managerCost) || isNaN(coachCost)) {
+    if (isNaN(managerCost) || isNaN(coachCost) || managerCost < 0 || coachCost < 0) {
         alert("Please enter cost amount correctly");
     } else {
+
+        // calculate and set total expense amount 
         const totalExpense = playerExpense + managerCost + coachCost;
         setTextById('total-cost-calculation', totalExpense);
     }
